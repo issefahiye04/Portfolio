@@ -44,11 +44,23 @@
                     width="300" 
                     height="200" 
                     class="profile__image"
+                    data-js-target="profile-image"
                 >
                 <figcaption class="profile__caption">
-                    Cykling och verkstadsarbete har varit en stor del av min vardag innan studierna.
+                    Från skruvnycklar och papperslistor i cykelverkstaden till kod och webbutveckling vid datorn.
                 </figcaption>
             </figure>
+
+            <!-- JS-krok: När användaren klickar på knappen ska bilden med data-js-target="profile-image" bytas ut mot bilden i data-image, och dess alt-text ska uppdateras till värdet i data-alt. -->
+            <button 
+                type="button" 
+                class="profile__button" 
+                data-js-action="swap-image" 
+                data-image="images/dator.jpg" 
+                data-alt="En öppen laptop som visar en webbdesign bredvid en stor bildskärm med kod och programmeringsböcker på ett skrivbord"
+            >
+                Visa vägen till webben
+            </button>
         </section>
 
         <section class="background">
