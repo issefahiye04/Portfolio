@@ -4,6 +4,14 @@ $epost = trim($_POST['epost'] ?? '');
 $amne = trim($_POST['amne'] ?? '');
 $kontaktsatt = trim($_POST['kontaktsatt'] ?? '');
 $meddelande = trim($_POST['meddelande'] ?? '');
+
+$harFel = (
+    $namn === '' ||
+    $epost === '' ||
+    !filter_var($epost, FILTER_VALIDATE_EMAIL) ||
+    $amne === '' ||
+    $meddelande === ''
+);
 ?>
 <!DOCTYPE html>
 <html lang="sv">
@@ -39,6 +47,43 @@ $meddelande = trim($_POST['meddelande'] ?? '');
     </header>
 
     <main>
+        <section class="thank-you">
+            <?php if ($harFel): ?>
+                <h1 class="thank-you__title">Något saknas i formuläret</h1>
+                <p class="thank-you__text">
+                    Kontrollera att du har fyllt i namn, en giltig e-postadress, ämne och meddelande innan du skickar.
+                </p>
+                <a href="kontakt.html" class="thank-you__link">Tillbaka till kontaktsidan</a>
+            <?php else: ?>
+                <h1 class="thank-you__title">Tack för ditt meddelande, <?php echo htmlspecialchars($namn); ?>!</h1>
+                <p class="thank-you__text">
+                    Jag har tagit emot din förfrågan och återkommer så snart jag kan.
+                </p>
+
+                <dl class="thank-you__summary">
+                    <div class="thank-you__item">
+                        <dt class="thank-you__term">E-post</dt>
+                        <dd class="thank-you__value"><?php echo htmlspecialchars($epost); ?></dd>
+                    </div>
+                    <div class="thank-you__item">
+                        <dt class="thank-you__term">Ämne</dt>
+                        <dd class="thank-you__value"><?php echo htmlspecialchars($amne); ?></dd>
+                    </div>
+                    <?php if ($kontaktsatt !== ''): ?>
+                        <div class="thank-you__item">
+                            <dt class="thank-you__term">Önskad kontaktväg</dt>
+                            <dd class="thank-you__value"><?php echo htmlspecialchars($kontaktsatt); ?></dd>
+                        </div>
+                    <?php endif; ?>
+                    <div class="thank-you__item">
+                        <dt class="thank-you__term">Meddelande</dt>
+                        <dd class="thank-you__value"><?php echo nl2br(htmlspecialchars($meddelande)); ?></dd>
+                    </div>
+                </dl>
+
+                <a href="index.html" class="thank-you__link">Tillbaka till startsidan</a>
+            <?php endif; ?>
+        </section>
     </main>
 
     <footer class="page-footer">
