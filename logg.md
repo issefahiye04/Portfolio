@@ -6,6 +6,7 @@ Grupp: HTML Inlämningsgrupp 23 – Ismail Fahiye och Abdelbaset Alzeiton
 | Datum | Tid | Vad jag gjorde | Commit |
 |---|---|---|---|
 | 2026-11-21 | 2,5 h | Skapade GitHub-repo och GitHub Projects-board med kort för alla delar. Skapade mappstruktur (css/, js/). Byggde head, header med navigation, main med tre sections och footer på Om mig (index.html). Platshållartext tillfälligt. | Skapat mappstruktur och head i index.html / Lagt till header och navigation med BEM / Om mig: struktur klar, tillfällig platshållartext |
+| 2026-11-22 | 1,5h |  Fick bakgrunden till den fiktiva personen från Abdelbaset. Delade upp texten i presentation, bakgrund och mål på Om mig. Bytte ut platshållartexten mot egen text. Lade till efternamnet Lindqvist i title, h1 och footer. Skrev ny meta description. Valde en bild på Unsplash, skrev alt-text och bildtext och ändrade height till 200. Skapade mappen images/ och lade in profil.jpg | Om mig: egen text och profilbild |
 
 ## BEM-namn
 
@@ -20,9 +21,10 @@ Grupp: HTML Inlämningsgrupp 23 – Ismail Fahiye och Abdelbaset Alzeiton
 
 
 ## Att göra
-- Byta ut platshållartexten mot egen text
-- Lägga till bilden images/profil.jpg
+- Byta ut platshållartexten mot egen text // klart
+- Lägga till bilden images/profil.jpg //klart
 - Bestämma egen sida med Abdelbaset
+- Kontakt-sidan + tack.php.
 
 ## AI-användning
 | Datum | Vad jag (ismail) frågade AI om | Vad jag lärde mig |
@@ -33,3 +35,5 @@ Grupp: HTML Inlämningsgrupp 23 – Ismail Fahiye och Abdelbaset Alzeiton
 | 2026-11-21 | Feedback på mitt gamla webbprojekt jämfört med nya kraven | Mappstruktur med css/, js/, images/, meta description, egen h1 per sida, BEM |
 | 2026-11-21 | Vad tack.php och .md är | tack.php visar svaret från formuläret och läser $_POST, .md är Markdown |
 | 2026-11-21 | Feedback på min HTML-kod för Om mig | Saknad > i meta-taggen, BEM-block ska ligga på section i stället för main |
+| 2026-11-22 | Feedback på texten om Alexander: dela upp i tre sektioner | Att använda efternamn |
+| 2026-11-22 | AI förminskade bildfilen från 3,6 MB till 180 kB | Bildstorlek & laddningstid |
