@@ -1,3 +1,10 @@
+<?php
+$namn = trim($_POST['namn'] ?? '');
+$epost = trim($_POST['epost'] ?? '');
+$amne = trim($_POST['amne'] ?? '');
+$kontaktsatt = trim($_POST['kontaktsatt'] ?? '');
+$meddelande = trim($_POST['meddelande'] ?? '');
+?>
 <!DOCTYPE html>
 <html lang="sv">
 <head>
