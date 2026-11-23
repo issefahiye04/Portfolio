@@ -10,7 +10,8 @@ Grupp: HTML Inlämningsgrupp 23 – Ismail Fahiye och Abdelbaset Alzeiton
 | 2026-11-22 | 0,5 h | Lade till en JS-krok på Om mig: knapp som ska byta cykelbilden mot en datorbild (data-js-action, data-image, data-alt, data-js-target). Skrev bildtext som passar båda bilderna. | Om mig: JS-krok för bildbyte |
 | 2026-11-22 | 1,5 h | Skapade kontakt.html med inledning, kontaktuppgifter (mailto, GitHub, LinkedIn) och formulär med text, email, select, radioknappar i fieldset och textarea. Lade till required och "Välj ämne" på select. | Skapat kontaktsida med kontaktuppgifter och formulär / Kontakt: formulär klart med required på select |
 | 2026-11-22 | 1 h | Skapade tack.php som läser formulärdata med $_POST, validerar fälten och visar ett svar med htmlspecialchars. | tack.php: tar emot formulärdata med $_POST / tack.php: visar svar och validerar formulärdata |
-
+| 2026-11-23 | Ej noterad | Abdelbaset: Arbetade med kompetenser.html, projekt.html och utbildning.html. Anpassade innehåll, title, meta description, aktiv menylänk och namnet Alexander Lindqvist. Hämtade Ismails uppdateringar, löste konflikten i index.html och pushade ändringarna. | Merge updates from Ismail |
+| 2026-11-23 | 2.5 h | Abdelbaset: Lade till BEM-klasser för mina tre sidor i CSS. Förstorade menylänkarnas klickytor. Genomförde W3C- och Lighthouse-tester och sparade skärmbilder. Rättade meta description på kompetenssidan. | 002cbf0 – Lagt till BEM-klasser och förbättrat menyns klickytor |
 ## BEM-namn
 
 | Block | Element | Modifier | Används på |
