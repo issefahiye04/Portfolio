@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Om mig - Alexander</title>
-    <meta name="description" content="Alexander är systemvetare som är intresserad av webbutveckling. Läs om bakgrund och mål">
+    <title>Om mig - Alexander Lindqvist</title>
+    <meta name="description" content="Alexander Lindqvist studerar systemvetenskap i Borlänge och siktar på att arbeta med webbutveckling. Lär känna honom och hans väg från cykelverkstaden till webben.">
     <link rel="stylesheet" href="css/style.css">
     <script src="js/script.js" defer></script>
 </head>
 <body>
-   <header class="page-header">
+    <header class="page-header">
         <nav class="navigation" aria-label="Huvudmeny">
             <ul class="navigation__list">
                 <li class="navigation__item">
@@ -30,48 +30,56 @@
             </ul>
         </nav>
     </header>
+
     <main>
-        <!-- TODO: byt ut platshållartexten mot egen text -->
-    <section class="profile">
-        <h1 class="profile__title">Alexander</h1>
-        <p class="profile__text">
-            Jag heter Alexander  Lindqvist och är systemvetare med en passion för webbutveckling och digitala lösningar. Under min utbildning har jag utvecklat en bred kompetens inom både frontend och backend, och jag gillar att skapa användarvänliga och estetiskt tilltalande webbplatser.
-        </p>
-        <p class="profile__text">
-            Mitt mål är att bidra till effektiva och innovativa webbprojekt som gör skillnad för både användare och företag. Jag är noggrann, nyfiken och alltid redo att ta mig an nya utmaningar.
-        </p>
-        <figure class="profile__figure">
-            <img 
-                src="images/profil.jpg" 
-                alt="Illustration av en person som arbetar vid en dator" 
-                width="300" 
-                height="300" 
-                class="profile__image"
+        <section class="profile">
+            <h1 class="profile__title">Alexander Lindqvist</h1>
+            <p class="profile__text">
+                Jag heter Alexander, bor i Borlänge och pluggar systemvetenskap. När jag inte sitter med studierna gillar jag att cykla, träna och hålla koll på ny teknik.
+            </p>
+            <figure class="profile__figure">
+                <img 
+                    src="images/profil.jpg" 
+                    alt="Två cykelramar och cykeldelar på en arbetsbänk framför en verktygstavla i en cykelverkstad" 
+                    width="300" 
+                    height="200" 
+                    class="profile__image"
+                    data-js-target="profile-image"
+                >
+                <figcaption class="profile__caption">
+                    Från skruvnycklar och papperslistor i cykelverkstaden till kod och webbutveckling vid datorn.
+                </figcaption>
+            </figure>
+
+            <!-- JS-krok: När användaren klickar på knappen ska bilden med data-js-target="profile-image" bytas ut mot bilden i data-image, och dess alt-text ska uppdateras till värdet i data-alt. -->
+            <button 
+                type="button" 
+                class="profile__button" 
+                data-js-action="swap-image" 
+                data-image="images/dator.jpg" 
+                data-alt="En öppen laptop som visar en webbdesign bredvid en stor bildskärm med kod och programmeringsböcker på ett skrivbord"
             >
-            <figcaption class="profile__caption">
-                Illustration av en arbetsplats vid ett skrivbord med dator och skrivmaterial.
-            </figcaption>
-        </figure>
-    </section>
+                Visa vägen till webben
+            </button>
+        </section>
 
-    <section class="background">
-        <h2 class="background__title">Bakgrund</h2>
-        <p class="background__text">
-            Jag har en kandidatexamen i systemvetenskap med fokus på programmering och systemutveckling. Under studietiden har jag jobbat med olika projekt och praktiker där jag fått erfarenhet av webbdesign och databashantering.
-        </p>
-    </section>
+        <section class="background">
+            <h2 class="background__title">Bakgrund</h2>
+            <p class="background__text">
+                Innan jag började på högskolan jobbade jag i en cykelverkstad med reparationer, kundservice och tidsbokning. På verkstaden skötte vi bokningarna på papper, och när det blev mycket att göra blev det snabbt rörigt. Det var där jag började fundera på hur enkla digitala system kan göra vardagen smidigare.
+            </p>
+        </section>
 
-    <section class="goals">
-        <h2 class="goals__title">Mål</h2>
-        <p class="goals__text">
-            Jag vill bli en fullstack-utvecklare som kan arbeta i team för att skapa smarta och användarvänliga lösningar. Jag vill fortsätta utvecklas inom både tekniska och kreativa områden.
-        </p>
-    </section>
-</main>
-
+        <section class="goals">
+            <h2 class="goals__title">Mål</h2>
+            <p class="goals__text">
+                Efter studierna vill jag arbeta med webbutveckling. Mitt mål är att bygga tydliga och användbara webbplatser som faktiskt hjälper människor i vardagen.
+            </p>
+        </section>
+    </main>
 
     <footer class="page-footer">
-        <p class="page-footer__text">&copy; Alexander 2026</p>
+        <p class="page-footer__text">&copy; Alexander Lindqvist 2026</p>
     </footer>
 </body>
 </html>

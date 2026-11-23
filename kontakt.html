@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt - Alexander Lindqvist</title>
+    <meta name="description" content="Kontakta Alexander Lindqvist via formulär, e-post eller sociala medier för frågor om studier, webbutveckling eller samarbeten.">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+    <header class="page-header">
+        <nav class="navigation" aria-label="Huvudmeny">
+            <ul class="navigation__list">
+                <li class="navigation__item">
+                    <a href="index.html" class="navigation__link">Om mig</a>
+                </li>
+                <li class="navigation__item">
+                    <a href="kompetenser.html" class="navigation__link">Kompetenser</a>
+                </li>
+                <li class="navigation__item">
+                    <a href="projekt.html" class="navigation__link">Projekt</a>
+                </li>
+                <li class="navigation__item">
+                    <a href="utbildning.html" class="navigation__link">Utbildning</a>
+                </li>
+                <li class="navigation__item">
+                    <a href="kontakt.html" class="navigation__link navigation__link--active" aria-current="page">Kontakt</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="contact-intro">
+            <h1 class="contact-intro__title">Hör av dig</h1>
+            <p class="contact-intro__text">
+                Har du frågor om mina studier, vill prata webbutveckling eller bara säga hej? Skicka gärna ett meddelande i formuläret nedan eller ta kontakt via någon av mina kanaler.
+            </p>
+        </section>
+
+        <section class="contact-details">
+            <h2 class="contact-details__title">Kontaktuppgifter</h2>
+            <ul class="contact-details__list">
+                <li class="contact-details__item">
+                    <a href="mailto:alexander@example.com" class="contact-details__link">Skicka e-post till mig</a>
+                </li>
+                <li class="contact-details__item">
+                    <a href="https://github.com" class="contact-details__link">Mitt GitHub-konto</a>
+                </li>
+                <li class="contact-details__item">
+                    <a href="https://www.linkedin.com" class="contact-details__link">Min profil på LinkedIn</a>
+                </li>
+            </ul>
+        </section>
+
+        <section class="contact-form-section">
+            <h2 class="contact-form-section__title">Skicka ett meddelande</h2>
+            <form action="tack.php" method="post" class="contact-form">
+                <div class="contact-form__group">
+                    <label for="namn" class="contact-form__label">Namn</label>
+                    <input type="text" id="namn" name="namn" class="contact-form__input" required>
+                </div>
+
+                <div class="contact-form__group">
+                    <label for="epost" class="contact-form__label">E-post</label>
+                    <input type="email" id="epost" name="epost" class="contact-form__input" required>
+                </div>
+
+                <div class="contact-form__group">
+                    <label for="amne" class="contact-form__label">Vad gäller saken?</label>
+                    <select id="amne" name="amne" class="contact-form__select" required>
+                        <option value="">Välj ämne...</option>
+                        <option value="Webbutveckling">Webbutveckling &amp; projekt</option>
+                        <option value="Studier">Studier &amp; systemvetenskap</option>
+                        <option value="Övrigt">Övrigt</option>
+                    </select>
+                </div>
+
+                <fieldset class="contact-form__fieldset">
+                    <legend class="contact-form__legend">Hur vill du helst bli kontaktad?</legend>
+                    <div class="contact-form__radio-group">
+                        <input type="radio" id="svar-epost" name="kontaktsatt" value="E-post" class="contact-form__radio" checked>
+                        <label for="svar-epost" class="contact-form__radio-label">Via e-post</label>
+                    </div>
+                    <div class="contact-form__radio-group">
+                        <input type="radio" id="svar-linkedin" name="kontaktsatt" value="LinkedIn" class="contact-form__radio">
+                        <label for="svar-linkedin" class="contact-form__radio-label">Via LinkedIn</label>
+                    </div>
+                </fieldset>
+
+                <div class="contact-form__group">
+                    <label for="meddelande" class="contact-form__label">Meddelande</label>
+                    <textarea id="meddelande" name="meddelande" rows="5" class="contact-form__textarea" required></textarea>
+                </div>
+
+                <button type="submit" class="contact-form__button">Skicka meddelande</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="page-footer">
+        <p class="page-footer__text">&copy; Alexander Lindqvist 2026</p>
+    </footer>
+</body>
+</html>
