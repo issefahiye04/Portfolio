@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projekt - Alexander Lindqvist</title>
+    <meta name="description" content="Alexanders övningsprojekt: en bokningssida för cykelservice och en studieplanerare.">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+    <header class="page-header">
+        <nav class="navigation" aria-label="Huvudmeny">
+            <ul class="navigation__list">
+                <li class="navigation__item">
+                    <a href="index.html" class="navigation__link">Om mig</a>
+                </li>
+                <li class="navigation__item">
+                    <a href="kompetenser.html" class="navigation__link">Kompetenser</a>
+                </li>
+                <li class="navigation__item">
+                    <a href="projekt.html" class="navigation__link navigation__link--active" aria-current="page">Projekt</a>
+                </li>
+                <li class="navigation__item">
+                    <a href="utbildning.html" class="navigation__link">Utbildning</a>
+                </li>
+                <li class="navigation__item">
+                    <a href="kontakt.html" class="navigation__link">Kontakt</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="projects">
+            <h1 class="projects__title">Projekt</h1>
+
+            <p class="projects__text">
+                Här presenterar jag två fiktiva övningsprojekt.
+                Idéerna bygger på mitt intresse för cyklar, studier
+                och digitala lösningar.
+            </p>
+
+            <article class="project-card">
+                <h2 class="project-card__title">
+                    Bokningssida för cykelservice
+                </h2>
+
+                <p class="project-card__text">
+                    Idén kommer från mitt tidigare arbete i en cykelverkstad.
+                    Där skrevs bokningar på papper, vilket ibland gjorde
+                    det svårt att få en tydlig överblick.
+                </p>
+
+                <h3 class="project-card__subtitle">Syfte</h3>
+
+                <p class="project-card__text">
+                    Målet är att göra det enklare för kunder att lämna
+                    en förfrågan om cykelservice och beskriva problemet.
+                </p>
+
+                <h3 class="project-card__subtitle">Planerat innehåll</h3>
+
+                <ul class="project-card__list">
+                    <li class="project-card__item">
+                        Information om verkstadens tjänster.
+                    </li>
+                    <li class="project-card__item">
+                        Ett formulär med namn, e-post och typ av service.
+                    </li>
+                    <li class="project-card__item">
+                        Ett textfält där kunden beskriver problemet.
+                    </li>
+                    <li class="project-card__item">
+                        En svarssida som visar att förfrågan har tagits emot.
+                    </li>
+                </ul>
+
+                <h3 class="project-card__subtitle">Det jag vill lära mig</h3>
+
+                <p class="project-card__text">
+                    Jag vill öva på tydliga formulär, kopplade etiketter
+                    och hur PHP tar emot data. Jag vill också förstå
+                    hur sidan kan bli lättare att använda med tangentbord.
+                </p>
+
+                <p class="project-card__status">
+                    Status: projektidé. Ingen fungerande bokningstjänst
+                    är publicerad.
+                </p>
+            </article>
+
+            <article class="project-card">
+                <h2 class="project-card__title">Studieplanerare</h2>
+
+                <p class="project-card__text">
+                    Som student behöver jag hålla reda på läsning,
+                    övningar och inlämningsuppgifter.
+                    Min idé är att samla veckans uppgifter på en enkel sida.
+                </p>
+
+                <h3 class="project-card__subtitle">Syfte</h3>
+
+                <p class="project-card__text">
+                    Målet är att skapa en tydlig överblick över vad
+                    som ska göras och när uppgifterna ska vara klara.
+                </p>
+
+                <h3 class="project-card__subtitle">Planerat innehåll</h3>
+
+                <ul class="project-card__list">
+                    <li class="project-card__item">
+                        En lista över veckans studieuppgifter.
+                    </li>
+                    <li class="project-card__item">
+                        En tabell med kurser och inlämningsdatum.
+                    </li>
+                    <li class="project-card__item">
+                        Länkar till studiematerial.
+                    </li>
+                    <li class="project-card__item">
+                        En framtida funktion för att markera klara uppgifter.
+                    </li>
+                </ul>
+
+                <h3 class="project-card__subtitle">Det jag vill lära mig</h3>
+
+                <p class="project-card__text">
+                    Jag vill öva på listor, tabeller och semantisk HTML.
+                    Senare vill jag använda JavaScript för att låta
+                    användaren markera uppgifter som klara.
+                </p>
+
+                <p class="project-card__status">
+                    Status: projektidé. Studieplaneraren är inte byggd ännu.
+                </p>
+            </article>
+
+            <section class="project-contact">
+                <h2 class="project-contact__title">
+                    Frågor om mina projekt?
+                </h2>
+
+                <p class="project-contact__text">
+                    Besök kontaktsidan om du vill ställa en fråga
+                    eller diskutera en projektidé.
+                </p>
+
+                <a href="kontakt.html" class="project-contact__link">
+                    Kontakta Alexander Lindqvist
+                </a>
+            </section>
+        </section>
+    </main>
+
+    <footer class="page-footer">
+        <p class="page-footer__text">&copy; Alexander Lindqvist 2026</p>
+    </footer>
+</body>
+</html>
