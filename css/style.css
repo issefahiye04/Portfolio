@@ -1,0 +1,76 @@
+/* Gemensamma delar */
+.page-header {}
+.navigation {}
+.navigation__list {}
+.navigation__item {}
+.navigation__link {
+    display: inline-block;
+    padding: 12px;
+}
+.navigation__link--active {}
+.page-footer {}
+.page-footer__text {}
+/* Kompetenser */
+.skills {}
+.skills__title {}
+.skills__text {}
+.technical-skills {}
+.technical-skills__title {}
+.technical-skills__text {}
+.technical-skills__table {}
+.technical-skills__caption {}
+.technical-skills__head {}
+.technical-skills__row {}
+.technical-skills__heading {}
+.technical-skills__body {}
+.technical-skills__cell {}
+.personal-skills {}
+.personal-skills__title {}
+.personal-skills__list {}
+.personal-skills__item {}
+
+.learning-goals {}
+.learning-goals__title {}
+.learning-goals__text {}
+
+/* Projekt */
+.projects {}
+.projects__title {}
+.projects__text {}
+
+.project-card {}
+.project-card__title {}
+.project-card__text {}
+.project-card__subtitle {}
+.project-card__list {}
+.project-card__item {}
+.project-card__status {}
+
+.project-contact {}
+.project-contact__title {}
+.project-contact__text {}
+.project-contact__link {}
+
+/* Utbildning och erfarenhet */
+.education {}
+.education__title {}
+.education__text {}
+
+.studies {}
+.studies__title {}
+.studies__subtitle {}
+.studies__text {}
+.studies__list {}
+.studies__item {}
+
+.experience {}
+.experience__title {}
+.experience__subtitle {}
+.experience__text {}
+.experience__list {}
+.experience__item {}
+
+.career-goals {}
+.career-goals__title {}
+.career-goals__text {}
+.career-goals__link {}
