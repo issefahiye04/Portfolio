@@ -12,6 +12,8 @@ Grupp: HTML Inlämningsgrupp 23 – Ismail Fahiye och Abdelbaset Alzeiton
 | 2026-11-22 | 1 h | Skapade tack.php som läser formulärdata med $_POST, validerar fälten och visar ett svar med htmlspecialchars. | tack.php: tar emot formulärdata med $_POST / tack.php: visar svar och validerar formulärdata |
 | 2026-11-23 | Ej noterad | Abdelbaset: Arbetade med kompetenser.html, projekt.html och utbildning.html. Anpassade innehåll, title, meta description, aktiv menylänk och namnet Alexander Lindqvist. Hämtade Ismails uppdateringar, löste konflikten i index.html och pushade ändringarna. | Merge updates from Ismail |
 | 2026-11-23 | 2.5 h | Abdelbaset: Lade till BEM-klasser för mina tre sidor i CSS. Förstorade menylänkarnas klickytor. Genomförde W3C- och Lighthouse-tester och sparade skärmbilder. Rättade meta description på kompetenssidan. | 002cbf0 – Lagt till BEM-klasser och förbättrat menyns klickytor |
+| 2026-11-25 | 2 h | Skapade Lärdagbok sida och uppdatera efter feedback | Lagt till Lärdagbok med filter-krok + uppdaterad nav |
+
 ## BEM-namn
 
 | Block | Element | Modifier | Används på |
@@ -26,6 +28,8 @@ Grupp: HTML Inlämningsgrupp 23 – Ismail Fahiye och Abdelbaset Alzeiton
 | contact-form-section | __title | – | kontakt.html |
 | contact-form | __group, __label, __input, __select, __fieldset, __legend, __radio-group, __radio, __radio-label, __textarea, __button | – | kontakt.html |
 | thank-you | __title, __text, __summary, __item, __term, __value, __link | – | tack.php |
+| posts | __title, __intro, __filters, __filter-item, __filter-button, __list | __filter-button--active | lardagbok.html |
+| post-card | __title, __meta, __text | – | lardagbok.html |
 | page-footer | __text | – | Alla sidor |
 
 ## JS-krokar
@@ -33,15 +37,16 @@ Grupp: HTML Inlämningsgrupp 23 – Ismail Fahiye och Abdelbaset Alzeiton
 | Interaktion | ACTION | DATA | TARGET | Sida |
 |---|---|---|---|---|
 | Byta profilbild | data-js-action="swap-image" | data-image, data-alt | data-js-target="profile-image" | index.html |
-
+| Filtrera inlägg efter kategori | data-js-action="filter-posts" | data-category | data-js-target="posts-list" | lardagbok.html |
 
 ## Att göra
 - Byta ut platshållartexten mot egen text // klart
-- Lägga till bilden images/profil.jpg //klart
-- Bestämma egen sida med Abdelbaset
-- Kontakt-sidan + tack.php. // klart
--  Testa på skolans webbserver (PHP)
--  Tester: W3C, Lighthouse, tangentbord
+- Lägga till bilden images/profil.jpg // klart
+- Bestämma egen sida med Abdelbaset // klart (Lärdagbok)
+- Kontakt-sidan + tack.php // klart
+- Egen sida: lardagbok.html // klart
+- Testa på skolans webbserver (PHP)
+- Tester: W3C, Lighthouse, tangentbord
 
 ## AI-användning
 | Datum | Vad jag (ismail) frågade AI om | Vad jag lärde mig |
@@ -58,3 +63,6 @@ Grupp: HTML Inlämningsgrupp 23 – Ismail Fahiye och Abdelbaset Alzeiton
 | 2026-11-22 | Förklaring av JS-krokar och feedback på min krok | En JS-krok är som en etikett på HTML-element, som gör att JavaScript lätt hittar rätt element |
 | 2026-11-22 | Förklaring av PHP, $_POST och htmlspecialchars, feedback på formulär och tack.php | Jag lärde mig att PHP tar emot formulärdatan på servern via $_POST utifrån fältens name-attribut och skriver ut svaren säkert med htmlspecialchars() så att ingen injicerad kod körs på sidan. |
 | 2026-11-22 | Förhörsfrågor om koden i tack.php | Testade om jag förstod det rätt |
+| 2026-11-25 | Granskning av Abdelbasets sidor och kontroll av uppgiftskraven i Canvas | Alla krav verkades upfyllas |
+| 2026-11-25 | Förslag på egen sida och förslag på inläggsrubriker till Lärdagbok | Bollade ider och kom fram till en Lärdagbok, en sida där Alexander skriver korta inlägg om vad han har lärt sig |
+| 2026-11-25 | Feedback på Lärdagbok: aria-pressed, aria-label på filterlistan, aria-live, div som behållare |förbättrade tillgänglighet och struktur i Lärdagbok med aria-pressed på filterknapparna, aria-label på filterlistan, aria-live="polite" på inläggslistan och enhetlig menyordning med Lärdagbok före Kontakt. |
