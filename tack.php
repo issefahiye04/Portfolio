@@ -40,6 +40,9 @@ $harFel = (
                     <a href="utbildning.html" class="navigation__link">Utbildning</a>
                 </li>
                 <li class="navigation__item">
+                    <a href="lardagbok.html" class="navigation__link">Lärdagbok</a>
+                </li>
+                <li class="navigation__item">
                     <a href="kontakt.html" class="navigation__link">Kontakt</a>
                 </li>
             </ul>

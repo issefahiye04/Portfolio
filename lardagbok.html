@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lärdagbok - Alexander Lindqvist</title>
+    <meta name="description" content="Korta inlägg i min lärdagbok där jag, Alexander Lindqvist, skriver om vad jag lärt mig under studierna.">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+    <header class="page-header">
+        <nav class="navigation" aria-label="Huvudmeny">
+            <ul class="navigation__list">
+                <li class="navigation__item">
+                    <a href="index.html" class="navigation__link">Om mig</a>
+                </li>
+                <li class="navigation__item">
+                    <a href="kompetenser.html" class="navigation__link">Kompetenser</a>
+                </li>
+                <li class="navigation__item">
+                    <a href="projekt.html" class="navigation__link">Projekt</a>
+                </li>
+                <li class="navigation__item">
+                    <a href="utbildning.html" class="navigation__link">Utbildning</a>
+                </li>
+                <li class="navigation__item">
+                    <a href="lardagbok.html" class="navigation__link navigation__link--active" aria-current="page">Lärdagbok</a>
+                </li>
+                <li class="navigation__item">
+                    <a href="kontakt.html" class="navigation__link">Kontakt</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="posts">
+            <h1 class="posts__title">Lärdagbok</h1>
+            <p class="posts__intro">
+                Här skriver jag, Alexander Lindqvist, korta inlägg om vad jag har lärt mig i kursen.
+            </p>
+
+            <!-- JS-krok: När användaren klickar på en filterknapp ska inläggen i listan med data-js-target="posts-list" filtreras utifrån knappens data-category, och knapparnas aria-pressed ska uppdateras till "true" för vald knapp och "false" för övriga. -->
+            <ul class="posts__filters" aria-label="Filtrera inlägg efter kategori">
+                <li class="posts__filter-item">
+                    <button type="button" class="posts__filter-button posts__filter-button--active" data-js-action="filter-posts" data-category="alla" aria-pressed="true">Alla</button>
+                </li>
+                <li class="posts__filter-item">
+                    <button type="button" class="posts__filter-button" data-js-action="filter-posts" data-category="systemvetenskap" aria-pressed="false">Systemvetenskap</button>
+                </li>
+                <li class="posts__filter-item">
+                    <button type="button" class="posts__filter-button" data-js-action="filter-posts" data-category="html" aria-pressed="false">HTML</button>
+                </li>
+                <li class="posts__filter-item">
+                    <button type="button" class="posts__filter-button" data-js-action="filter-posts" data-category="php" aria-pressed="false">PHP</button>
+                </li>
+            </ul>
+
+            <div class="posts__list" data-js-target="posts-list" aria-live="polite">
+                <article class="post-card" data-category="systemvetenskap">
+                    <h2 class="post-card__title">Varför en systemvetare måste förstå människor, inte bara kod</h2>
+                    <p class="post-card__meta">Systemvetenskap · <time datetime="2026-11-18">18 november 2026</time></p>
+                    <p class="post-card__text">
+                        I början tänkte jag mest på kod och teknik, men i cykelverkstaden såg jag hur fel verktyg och krångliga rutiner skapar problem i vardagen. Genom intervjuer och kvalitativ metod lärde jag mig att utgå från hur människor faktiskt arbetar innan jag bygger något. Utan förståelse för användarna spelar det ingen roll hur snygg tekniken är bakom kulisserna.
+                    </p>
+                </article>
+
+                <article class="post-card" data-category="html">
+                    <h2 class="post-card__title">Vad jag lärde mig när en webbsida delas i tre lager</h2>
+                    <p class="post-card__meta">HTML · <time datetime="2026-11-21">21 november 2026</time></p>
+                    <p class="post-card__text">
+                        Tidigare blandade jag lätt ihop struktur, utseende och beteende, vilket gjorde det rörigt när jag skulle ändra något. När jag delade upp det med semantisk HTML, BEM-klasser och separata JS-krokar blev det mycket tydligare vad varje del ansvarar för. Nu blir det både enklare att felsöka och tryggare att bygga vidare på koden.
+                    </p>
+                </article>
+
+                <article class="post-card" data-category="php">
+                    <h2 class="post-card__title">Första gången mitt formulär faktiskt skickade något</h2>
+                    <p class="post-card__meta">PHP · <time datetime="2026-11-22">22 november 2026</time></p>
+                    <p class="post-card__text">
+                        Det kändes först krångligt att skilja på vad som händer i webbläsaren och på servern när jag jobbade med formulär och PHP. När jag kopplade ihop fältens name-attribut med $_POST, enkel validering och htmlspecialchars() föll allt på plats. Att kontrollera inmatad data på servern och skriva ut svaren säkert känns nu som en självklar vana.
+                    </p>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer class="page-footer">
+        <p class="page-footer__text">&copy; Alexander Lindqvist 2026</p>
+    </footer>
+</body>
+</html>
