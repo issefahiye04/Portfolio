@@ -10,6 +10,27 @@
 .navigation__link--active {}
 .page-footer {}
 .page-footer__text {}
+
+/* Lärdagbok */
+.posts {}
+.posts__title {}
+.posts__intro {}
+.posts__filters {}
+.posts__filter-item {
+    display: inline-block;
+    margin: 4px;
+}
+.posts__filter-button {
+    display: inline-block;
+    padding: 12px 16px;
+}
+.posts__filter-button--active {}
+.posts__list {}
+.post-card {}
+.post-card__title {}
+.post-card__meta {}
+.post-card__text {}
+
 /* Kompetenser */
 .skills {}
 .skills__title {}
