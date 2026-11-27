@@ -10,9 +10,12 @@ Grupp: HTML Inlämningsgrupp 23 – Ismail Fahiye och Abdelbaset Alzeiton
 | 2026-11-22 | 0,5 h | Lade till en JS-krok på Om mig: knapp som ska byta cykelbilden mot en datorbild (data-js-action, data-image, data-alt, data-js-target). Skrev bildtext som passar båda bilderna. | Om mig: JS-krok för bildbyte |
 | 2026-11-22 | 1,5 h | Skapade kontakt.html med inledning, kontaktuppgifter (mailto, GitHub, LinkedIn) och formulär med text, email, select, radioknappar i fieldset och textarea. Lade till required och "Välj ämne" på select. | Skapat kontaktsida med kontaktuppgifter och formulär / Kontakt: formulär klart med required på select |
 | 2026-11-22 | 1 h | Skapade tack.php som läser formulärdata med $_POST, validerar fälten och visar ett svar med htmlspecialchars. | tack.php: tar emot formulärdata med $_POST / tack.php: visar svar och validerar formulärdata |
-| 2026-11-23 | Ej noterad | Abdelbaset: Arbetade med kompetenser.html, projekt.html och utbildning.html. Anpassade innehåll, title, meta description, aktiv menylänk och namnet Alexander Lindqvist. Hämtade Ismails uppdateringar, löste konflikten i index.html och pushade ändringarna. | Merge updates from Ismail |
+| 2026-11-23 | 3,5 h | Abdelbaset: Arbetade med kompetenser.html, projekt.html och utbildning.html. Anpassade innehåll, title, meta description, aktiv menylänk och namnet Alexander Lindqvist. Hämtade Ismails uppdateringar, löste konflikten i index.html och pushade ändringarna. | Merge updates from Ismail |
 | 2026-11-23 | 2.5 h | Abdelbaset: Lade till BEM-klasser för mina tre sidor i CSS. Förstorade menylänkarnas klickytor. Genomförde W3C- och Lighthouse-tester och sparade skärmbilder. Rättade meta description på kompetenssidan. | 002cbf0 – Lagt till BEM-klasser och förbättrat menyns klickytor |
 | 2026-11-25 | 2 h | Skapade Lärdagbok sida och uppdatera efter feedback | Lagt till Lärdagbok med filter-krok + uppdaterad nav |
+| 2026-11-27 | 2 h | Abdelbaset: BEM-klassnamn för Om mig, Kontakt och tack.php i CSS. Större tryckytor för filterknappar och kontaktlänkar efter Lighthouse. | updatera css / updatera css för kontakt sidan |
+| 2026-11-27 | 2 h | Båda: Publicerade portfolion på skolans webbserver och gjorde klart alla tester tillsammans, med skärmdumpar. | – |
+| 2026-11-27 | 6 h | Båda: Skrev rapporten, PowerPoint och videomanus tillsammans. | – |
 
 ## BEM-namn
 
@@ -39,15 +42,6 @@ Grupp: HTML Inlämningsgrupp 23 – Ismail Fahiye och Abdelbaset Alzeiton
 | Byta profilbild | data-js-action="swap-image" | data-image, data-alt | data-js-target="profile-image" | index.html |
 | Filtrera inlägg efter kategori | data-js-action="filter-posts" | data-category | data-js-target="posts-list" | lardagbok.html |
 
-## Att göra
-- Byta ut platshållartexten mot egen text // klart
-- Lägga till bilden images/profil.jpg // klart
-- Bestämma egen sida med Abdelbaset // klart (Lärdagbok)
-- Kontakt-sidan + tack.php // klart
-- Egen sida: lardagbok.html // klart
-- Testa på skolans webbserver (PHP)
-- Tester: W3C, Lighthouse, tangentbord
-
 ## AI-användning
 | Datum | Vad jag (ismail) frågade AI om | Vad jag lärde mig |
 |---|---|---|
@@ -66,3 +60,5 @@ Grupp: HTML Inlämningsgrupp 23 – Ismail Fahiye och Abdelbaset Alzeiton
 | 2026-11-25 | Granskning av Abdelbasets sidor och kontroll av uppgiftskraven i Canvas | Alla krav verkades upfyllas |
 | 2026-11-25 | Förslag på egen sida och förslag på inläggsrubriker till Lärdagbok | Bollade ider och kom fram till en Lärdagbok, en sida där Alexander skriver korta inlägg om vad han har lärt sig |
 | 2026-11-25 | Feedback på Lärdagbok: aria-pressed, aria-label på filterlistan, aria-live, div som behållare |förbättrade tillgänglighet och struktur i Lärdagbok med aria-pressed på filterknapparna, aria-label på filterlistan, aria-live="polite" på inläggslistan och enhetlig menyordning med Lärdagbok före Kontakt. |
+| 2026-11-27 | Hjälp med tester (W3C, Lighthouse, skärmläsare) och felsökning av tack.php på servern | PHP måste köras på en server, och W3C ska testa HTML-utdata (Ctrl+U), inte PHP-koden |
+| 2026-11-27 | AI-stöd för PowerPoin och Ai skrev jamförelse koden utan context | Vi granskade Powerpointen. Jämförelsen med AI-kod finns i rapporten, avsnitt 8.2 |
