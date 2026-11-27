@@ -11,6 +11,21 @@
 .page-footer {}
 .page-footer__text {}
 
+/* Om mig */
+.profile {}
+.profile__title {}
+.profile__text {}
+.profile__figure {}
+.profile__image {}
+.profile__caption {}
+.profile__button {}
+.background {}
+.background__title {}
+.background__text {}
+.goals {}
+.goals__title {}
+.goals__text {}
+
 /* Lärdagbok */
 .posts {}
 .posts__title {}
@@ -95,3 +110,44 @@
 .career-goals__title {}
 .career-goals__text {}
 .career-goals__link {}
+
+/* Kontakt */
+.contact-intro {}
+.contact-intro__title {}
+.contact-intro__text {}
+
+.contact-details {}
+.contact-details__title {}
+.contact-details__list {}
+.contact-details__item {
+    margin: 4px 0;
+}
+.contact-details__link {
+    display: inline-block;
+    padding: 12px;
+}
+
+.contact-form-section {}
+.contact-form-section__title {}
+.contact-form {}
+.contact-form__group {}
+.contact-form__label {}
+.contact-form__input {}
+.contact-form__select {}
+.contact-form__fieldset {}
+.contact-form__legend {}
+.contact-form__radio-group {}
+.contact-form__radio {}
+.contact-form__radio-label {}
+.contact-form__textarea {}
+.contact-form__button {}
+
+/* Tack */
+.thank-you {}
+.thank-you__title {}
+.thank-you__text {}
+.thank-you__link {}
+.thank-you__summary {}
+.thank-you__item {}
+.thank-you__term {}
+.thank-you__value {}
